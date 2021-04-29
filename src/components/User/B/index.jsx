@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
-import { renderRoutes } from 'react-router-config';
+// import { renderRoutes } from 'react-router-config';
+import renderRoutes from '../../../utils/renderRoutes';
 import { NavLink } from 'react-router-dom';
+
+// const authed = false;
+// const authPath = '/user/a';
 
 export default class B extends Component {
     componentDidMount() {
@@ -15,6 +19,7 @@ export default class B extends Component {
                 <NavLink to="/user/b/c">C</NavLink>
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <NavLink to="/user/b/d">D</NavLink>
+                {/* {renderRoutes(this.props.route.children, authed, authPath)} */}
                 {renderRoutes(this.props.route.children)}
             </div>
         );
