@@ -14,8 +14,8 @@ const routes = [
     {
         path: '/user',
         component: User,
-        // requiresAuth: true,
-        requiresAuth: false,
+        requiresAuth: true,
+        // requiresAuth: false,
         children: [
             {
                 path: '/user/a',
